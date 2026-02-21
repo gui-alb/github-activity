@@ -6,8 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class Payload {
     private String ref_type;
     private String action;
-    private String[] pages;
-    private String[] commits;
+    private Pages[] pages;
 
     public Payload() {
     }
@@ -26,17 +25,10 @@ public class Payload {
         this.action = action;
     }
 
-    public String[] getPages() {
+    public Pages[] getPages() {
         return pages;
     }
-    public void setPages(String[] pages) {
+    public void setPages(Pages[] pages) {
         this.pages = pages;
-    }
-
-    public String[] getCommits() {
-        return commits;
-    }
-    public void setCommits(String[] commits) {
-        this.commits = commits;
     }
 }

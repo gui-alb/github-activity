@@ -8,4 +8,8 @@ public class Push extends Event {
     public Push() {
         super();
     }
+    @Override
+    public String toString() {
+        return "";
+    }
 }

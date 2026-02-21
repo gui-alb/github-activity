@@ -8,4 +8,8 @@ public class Watch extends Event {
     public Watch() {
         super();
     }
+    @Override
+    public String toString() {
+        return "";
+    }
 }

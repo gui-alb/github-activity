@@ -8,4 +8,9 @@ public class Discussion extends Event {
     public Discussion() {
         super();
     }
+
+    @Override
+    public String toString() {
+        return "";
+    }
 }

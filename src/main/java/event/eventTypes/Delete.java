@@ -8,4 +8,9 @@ public class Delete extends Event {
     public Delete() {
         super();
     }
+
+    @Override
+    public String toString() {
+        return "";
+    }
 }

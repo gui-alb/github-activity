@@ -8,4 +8,8 @@ public class Gollum extends Event {
     public Gollum() {
         super();
     }
+    @Override
+    public String toString() {
+        return "";
+    }
 }

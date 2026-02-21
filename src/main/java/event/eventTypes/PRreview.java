@@ -8,4 +8,8 @@ public class PRreview extends Event {
     public PRreview() {
         super();
     }
+    @Override
+    public String toString() {
+        return "";
+    }
 }

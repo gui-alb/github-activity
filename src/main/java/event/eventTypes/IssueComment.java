@@ -8,4 +8,8 @@ public class IssueComment extends Event {
     public IssueComment() {
         super();
     }
+    @Override
+    public String toString() {
+        return "";
+    }
 }

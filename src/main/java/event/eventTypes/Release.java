@@ -8,4 +8,8 @@ public class Release extends Event {
     public Release() {
         super();
     }
+    @Override
+    public String toString() {
+        return "";
+    }
 }

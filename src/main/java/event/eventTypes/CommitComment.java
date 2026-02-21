@@ -8,4 +8,9 @@ public class CommitComment extends Event {
     public CommitComment() {
         super();
     }
+
+    @Override
+    public String toString() {
+        return "";
+    }
 }

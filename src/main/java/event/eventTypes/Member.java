@@ -8,4 +8,8 @@ public class Member extends Event {
     public Member() {
         super();
     }
+    @Override
+    public String toString() {
+        return "";
+    }
 }

@@ -31,7 +31,7 @@ import repo.Repo;
         @JsonSubTypes.Type(value = Watch.class, name = "WatchEvent"),
 })
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Event {
+public abstract class Event {
     private String id;
     private Repo repo;
 
@@ -50,4 +50,6 @@ public class Event {
     public void setRepo(Repo repo) {
         this.repo = repo;
     }
+
+    public abstract String toString();
 }

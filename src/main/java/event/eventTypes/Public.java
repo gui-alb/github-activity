@@ -8,4 +8,8 @@ public class Public extends Event {
     public Public() {
         super();
     }
+    @Override
+    public String toString() {
+        return "";
+    }
 }

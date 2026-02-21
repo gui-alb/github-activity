@@ -8,4 +8,8 @@ public class Fork extends Event {
     public Fork() {
         super();
     }
+    @Override
+    public String toString() {
+        return "";
+    }
 }

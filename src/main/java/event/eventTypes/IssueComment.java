@@ -10,6 +10,6 @@ public class IssueComment extends Event {
     }
     @Override
     public String toString() {
-        return "";
+        return "Commented a issue in " + getRepo().getName();
     }
 }

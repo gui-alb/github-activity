@@ -15,7 +15,7 @@ public class Main {
         List<Event> events = parser.parseEvents(json);
 
         for (Event e : events) {
-            System.out.println(e.getClass().getSimpleName());
+            System.out.println(e.toString());
         }
     }
 }

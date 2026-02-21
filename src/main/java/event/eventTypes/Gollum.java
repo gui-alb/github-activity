@@ -10,6 +10,6 @@ public class Gollum extends Event {
     }
     @Override
     public String toString() {
-        return "";
+        return "Created/updated " + getPayload().getPages().length + " pages in " + getRepo().getName() + " Wiki.";
     }
 }

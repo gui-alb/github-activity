@@ -10,6 +10,6 @@ public class Watch extends Event {
     }
     @Override
     public String toString() {
-        return "";
+        return "Starred " + getRepo().getName();
     }
 }

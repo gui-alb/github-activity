@@ -10,6 +10,6 @@ public class Member extends Event {
     }
     @Override
     public String toString() {
-        return "";
+        return getPayload().getAction() + " a collaborator in " + getRepo().getName();
     }
 }

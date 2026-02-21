@@ -10,6 +10,6 @@ public class Public extends Event {
     }
     @Override
     public String toString() {
-        return "";
+        return "Made the " + getRepo().getName() + " repository public :)";
     }
 }

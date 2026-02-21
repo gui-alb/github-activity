@@ -11,6 +11,6 @@ public class CommitComment extends Event {
 
     @Override
     public String toString() {
-        return "";
+        return "Commented a commit in: " + getRepo().getName();
     }
 }

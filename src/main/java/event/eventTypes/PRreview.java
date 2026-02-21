@@ -10,6 +10,6 @@ public class PRreview extends Event {
     }
     @Override
     public String toString() {
-        return "";
+        return getPayload().getAction() + " a Pull Request in " + getRepo().getName();
     }
 }

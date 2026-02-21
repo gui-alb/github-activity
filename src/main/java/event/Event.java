@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import event.eventTypes.*;
+import payload.Payload;
 import repo.Repo;
 
 
@@ -34,6 +35,7 @@ import repo.Repo;
 public abstract class Event {
     private String id;
     private Repo repo;
+    private Payload payload;
 
     public Event() {}
 
@@ -49,6 +51,13 @@ public abstract class Event {
     }
     public void setRepo(Repo repo) {
         this.repo = repo;
+    }
+
+    public Payload getPayload() {
+        return payload;
+    }
+    public void setPayload(Payload payload) {
+        this.payload = payload;
     }
 
     public abstract String toString();

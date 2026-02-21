@@ -11,6 +11,6 @@ public class Delete extends Event {
 
     @Override
     public String toString() {
-        return "";
+        return "Deleted " + getPayload().getRef_type() + " in " + getRepo().getName();
     }
 }

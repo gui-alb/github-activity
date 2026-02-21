@@ -10,6 +10,6 @@ public class Release extends Event {
     }
     @Override
     public String toString() {
-        return "";
+        return "Released something(?)";
     }
 }

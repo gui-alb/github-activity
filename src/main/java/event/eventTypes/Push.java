@@ -10,6 +10,6 @@ public class Push extends Event {
     }
     @Override
     public String toString() {
-        return "";
+        return "Pushed " + getPayload().getCommits().length + " commits in " + getRepo().getName();
     }
 }

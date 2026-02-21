@@ -3,6 +3,8 @@ package event.eventTypes;
 import event.Event;
 import repo.Repo;
 
+import java.util.Locale;
+
 public class Fork extends Event {
 
     public Fork() {
@@ -10,6 +12,6 @@ public class Fork extends Event {
     }
     @Override
     public String toString() {
-        return "";
+        return getPayload().getAction() + " " +  getRepo().getName() + " repository";
     }
 }

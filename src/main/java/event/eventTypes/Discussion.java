@@ -11,6 +11,6 @@ public class Discussion extends Event {
 
     @Override
     public String toString() {
-        return "";
+        return getPayload().getAction() + " a discussion in " + getRepo().getName();
     }
 }

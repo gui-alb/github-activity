@@ -11,6 +11,6 @@ public class Issues extends Event {
 
     @Override
     public String toString() {
-        return "";
+        return getPayload().getAction() + " a issue in " + getRepo().getName();
     }
 }

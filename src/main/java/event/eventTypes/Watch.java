@@ -5,7 +5,7 @@ import repo.Repo;
 
 public class Watch extends Event {
 
-    public Watch(int id, Repo repo) {
-        super(id, repo);
+    public Watch() {
+        super();
     }
 }

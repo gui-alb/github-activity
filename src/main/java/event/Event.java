@@ -1,5 +1,6 @@
 package event;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import event.eventTypes.*;
@@ -29,13 +30,24 @@ import repo.Repo;
         @JsonSubTypes.Type(value = Release.class, name = "ReleaseEvent"),
         @JsonSubTypes.Type(value = Watch.class, name = "WatchEvent"),
 })
-
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Event {
-    private int id;
+    private String id;
     private Repo repo;
 
-    public Event(int id, Repo repo) {
+    public Event() {}
+
+    public String getId() {
+        return id;
+    }
+    public void setId(String id) {
         this.id = id;
+    }
+
+    public Repo getRepo() {
+        return repo;
+    }
+    public void setRepo(Repo repo) {
         this.repo = repo;
     }
 }

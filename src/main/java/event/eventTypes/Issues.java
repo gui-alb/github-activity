@@ -5,7 +5,7 @@ import repo.Repo;
 
 public class Issues extends Event {
 
-    public Issues(int id, Repo repo) {
-        super(id, repo);
+    public Issues() {
+        super();
     }
 }

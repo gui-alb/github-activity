@@ -5,7 +5,7 @@ import repo.Repo;
 
 public class Push extends Event {
 
-    public Push(int id, Repo repo) {
-        super(id, repo);
+    public Push() {
+        super();
     }
 }

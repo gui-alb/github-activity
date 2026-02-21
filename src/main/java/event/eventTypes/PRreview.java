@@ -5,7 +5,7 @@ import repo.Repo;
 
 public class PRreview extends Event {
 
-    public PRreview(int id, Repo repo) {
-        super(id, repo);
+    public PRreview() {
+        super();
     }
 }

@@ -11,7 +11,22 @@ public class GitHubClient {
 
     private final HttpClient client = HttpClient.newHttpClient();
 
-    public String fetchUserEvents(String username) {
-        return "";
+    //
+    public String fetchUserEvents(String username) throws Exception{
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(urlBase + "/users/" + username + "/events"))
+                .header("Accept", "applicaation/vnd.github+json")
+                .header("User-Agent", "Java-21-App")
+                .GET()
+                .build();
+
+        HttpResponse<String> response =
+                client.send(request, HttpResponse.BodyHandlers.ofString());
+
+        if (response.statusCode() != 200) {
+            throw new RuntimeException("Erro: " + response.statusCode());
+        }
+
+        return response.body();
     }
 }

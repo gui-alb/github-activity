@@ -6,6 +6,7 @@ My solution to [github-user-activity](https://roadmap.sh/projects/github-user-ac
 ### How to run
 First you need to run: `mvn clean install`
 
+Then run:
 ````
 Linux & Mac: ./github-activity.sh <username>
 WIndows: java -jar target/github-activity.sh
